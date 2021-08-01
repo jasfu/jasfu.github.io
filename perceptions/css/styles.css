@@ -1,0 +1,68 @@
+.container {
+  font-family: arial;
+  height:100%;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  position:fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color:black;
+  text-decoration:none;
+}
+
+table {
+  border-collapse:collapse;
+  table-layout: fixed;
+}
+
+table tr td{
+  padding:16px 0;
+  line-height: 16px;
+}
+
+table tr:not(:first-child) td{
+  border-top:1px solid #d8d8d8;
+}
+
+table tr td:nth-child(2){
+  text-align: right;
+}
+
+.breadcrumb-list {
+  display:flex;
+  flex-wrap:wrap;
+  padding:0;
+  margin:24px 24px;
+  line-height: 24px;
+  list-style:none;
+}
+
+.breadcrumb-item:not(:first-child):before {
+  content: '/';
+  padding:0 12px;
+  color:lightgray;
+}
+
+.writing h1 {
+  line-height:24px;
+  margin:24px 24px;
+  font-size:32px;
+  text-align: center;
+}
+
+.writing h6 {
+  line-height:24px;
+  font-size:16px;
+  margin:0 24px;
+  text-align: center;
+  font-weight:normal;
+}
+
+.writing p {
+  line-height:24px;
+  margin: 24px 96px;
+}
